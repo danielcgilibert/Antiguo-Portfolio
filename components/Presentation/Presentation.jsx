@@ -8,7 +8,7 @@ const Presentation = () => {
       <Image
         data-aos="fade-up"
         className={styles.image}
-        src="/images/profile3.jpg"
+        src="/images/profile.jpg"
         alt="Picture of the author"
         width={300}
         height={450}
