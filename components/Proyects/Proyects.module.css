@@ -1,0 +1,29 @@
+/* .proyect {
+  @apply min-h-screen bg-white flex justify-start  p-12  flex-col;
+} */
+
+.proyectList {
+  @apply bg-gray grid grid-flow-row auto-cols-auto grid-cols-1 content-center justify-items-center gap-5 p-12 min-h-screen;
+}
+
+:global(.dark) .proyectList {
+  @apply bg-dark text-white;
+}
+
+@media screen(md) {
+  .proyectList {
+    @apply grid-cols-2;
+  }
+}
+
+@media screen(lg) {
+  .proyectList {
+    @apply grid-cols-2;
+  }
+}
+
+@media screen(xl) {
+  .proyectList {
+    @apply grid-cols-3;
+  }
+}

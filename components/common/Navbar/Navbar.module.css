@@ -1,0 +1,70 @@
+:global(.dark) .nav2 {
+  @apply bg-dark text-white;
+}
+
+:global(.dark) .navbarNav {
+  @apply bg-dark text-white border-solid border-t-2 border-sky-500;
+}
+
+.nav2 {
+  @apply bottom-0 w-full h-14 fixed  transition-all ease-linear delay-150 z-20;
+}
+
+.navbarNav {
+  @apply bg-white text-yellow list-none p-0 m-0 flex flex-row justify-center    h-full;
+}
+
+.navLink {
+  @apply flex  items-center;
+}
+
+.linkText {
+  @apply cursor-pointer;
+}
+
+.navItem {
+  @apply w-full flex justify-center items-center transition-all ease-linear delay-75;
+}
+
+.navItem svg {
+  @apply w-6 text-yellow;
+}
+
+.navItem:hover {
+  /* filter: grayscale(0%) opacity(1); */
+  @apply text-yellow;
+}
+
+.linkText {
+  @apply hidden;
+}
+
+@media screen(md) {
+  .nav2 {
+    @apply top-0 w-20 h-screen;
+  }
+
+  .nav2:hover {
+    @apply w-32;
+  }
+  .nav2:hover .linkText {
+    @apply inline;
+  }
+  .navbarNav {
+    @apply flex-col items-center border-none;
+  }
+
+  .navItem {
+    @apply mt-11;
+  }
+  .navItem:last-child {
+    @apply w-full mt-auto mb-5;
+  }
+
+  .navLink {
+    @apply h-6 mt-6;
+  }
+  .linkText {
+    @apply m-2;
+  }
+}

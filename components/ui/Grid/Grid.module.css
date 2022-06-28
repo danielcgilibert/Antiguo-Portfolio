@@ -1,0 +1,8 @@
+.grid {
+}
+
+@media screen(md) {
+  .grid {
+    @apply ml-20;
+  }
+}

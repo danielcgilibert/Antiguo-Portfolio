@@ -1,0 +1,29 @@
+.about {
+  @apply min-h-screen;
+}
+
+.about ul {
+  @apply text-base list-disc p-4;
+}
+
+.about li {
+  @apply my-2;
+}
+
+.about ul strong {
+  @apply text-blue-300;
+}
+.textStyle {
+  @apply font-bold;
+}
+
+.title {
+  @apply font-extrabold text-2xl text-amber-100;
+}
+.subTitle {
+  @apply font-bold text-xl text-white !important;
+}
+
+:global(.dark) .about {
+  @apply bg-dark2 text-white;
+}

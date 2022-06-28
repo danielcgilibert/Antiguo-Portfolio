@@ -1,0 +1,12 @@
+.container {
+  @apply bg-primary;
+}
+
+:global(.dark) .container {
+  @apply bg-dark text-white;
+}
+/* @media screen(md) {
+  .container {
+    @apply ml-20 p-4 bg-slate-300;
+  }
+} */

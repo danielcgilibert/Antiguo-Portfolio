@@ -1,0 +1,40 @@
+.card {
+  @apply flex flex-col  w-full max-h-full   bg-white shadow-lg rounded-lg text-center;
+}
+
+:global(.dark) .card {
+  @apply bg-dark text-white;
+}
+
+.card h1 {
+  @apply font-bold mt-2;
+}
+
+.card p {
+  @apply p-4 m-auto;
+}
+
+.card li {
+  @apply w-8;
+}
+.image {
+  @apply w-full;
+}
+
+.card a {
+  @apply flex justify-center mx-5 py-1 bg-yellow rounded-full px-8 mb-8;
+}
+.card ul {
+  @apply flex mt-auto  flex-wrap  flex-row content-center justify-center  items-center  gap-3;
+}
+
+.linkDisabled {
+  @apply bg-zinc-900;
+  /* cursor: not-allowed; */
+}
+
+@media screen(md) {
+  .card {
+    @apply w-80;
+  }
+}

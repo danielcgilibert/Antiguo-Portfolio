@@ -1,0 +1,125 @@
+.divSection {
+  @apply bg-gray min-h-screen flex flex-wrap flex-col justify-start justify-items-center pt-16 p-16 content-center  text-center;
+}
+
+@-webkit-keyframes color-change-5x {
+  0% {
+    color: #80d2ff;
+  }
+  25% {
+    color: #03a0fb;
+  }
+  50% {
+    color: #0477ba;
+  }
+  75% {
+    color: #18abff;
+  }
+  100% {
+    color: #60c5ff;
+  }
+}
+
+.name {
+  @apply font-bold  text-3xl;
+  /* background: #008adb;
+  background: radial-gradient(
+    ellipse farthest-side at bottom left,
+    #008adb 13%,
+    #00a1ff 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  animation: color-change-5x 6s infinite;
+  animation-direction: alternate;
+  /* transition-timing-function: ease-out; */
+}
+
+.title {
+  @apply text-3xl font-bold mt-5;
+}
+.subTitle {
+  @apply text-2xl font-semibold;
+}
+.image {
+  @apply rounded-full;
+}
+
+:global(.dark) .divSection {
+  @apply bg-dark text-white;
+}
+
+:global(.dark) .divImage {
+  @apply bg-dark text-white;
+}
+.infoList {
+  @apply text-center mt-5 font-bold    leading-relaxed;
+}
+
+.infoIcons {
+  @apply flex flex-row justify-center  content-end  mt-16  gap-4 h-full text-yellow;
+}
+
+.infoIcons svg {
+  @apply cursor-pointer hover:bg-slate-100 rounded-full;
+}
+
+@media screen(md) {
+  .divSection {
+    @apply flex flex-wrap  flex-row content-start justify-center  items-center pt-60 p-0 gap-4;
+  }
+
+  .infoIcons {
+    @apply flex flex-row gap-4 h-full text-yellow;
+  }
+
+  .image {
+    border-radius: 10% 10% 10% 10%;
+  }
+
+  .title {
+    @apply text-6xl font-bold mx-8;
+  }
+  .subTitle {
+    @apply text-5xl mt-5 font-semibold;
+  }
+
+  .name {
+    @apply font-bold  text-7xl;
+  }
+
+  .infoIcons svg {
+    @apply w-28 hover:bg-slate-100 rounded-full;
+  }
+}
+
+@media screen(md) {
+  .divSection {
+    @apply flex flex-wrap  flex-row content-start justify-center  items-center pt-40 p-0 gap-4;
+  }
+
+  .infoIcons {
+    @apply flex flex-row gap-4 h-full text-yellow;
+  }
+
+  .title {
+    @apply text-6xl font-bold mx-8;
+  }
+  .subTitle {
+    @apply text-5xl mt-5 font-semibold;
+  }
+
+  .name {
+    @apply font-bold  text-7xl;
+  }
+
+  .infoIcons svg {
+    @apply w-28 hover:bg-slate-100 rounded-full;
+  }
+}
+
+@media screen(xl) {
+  .divSection {
+    @apply pt-48;
+  }
+}
