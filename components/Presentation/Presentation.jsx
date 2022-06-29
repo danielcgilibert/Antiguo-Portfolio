@@ -23,10 +23,22 @@ const Presentation = () => {
           Web Developer
         </h2>
         <div className={styles.infoIcons} data-aos="fade-up">
-          <Envelope width={45} height={45} />
-          <GithubLogo width={45} height={45} />
-          <Article width={45} height={45} />
-          <LinkedinLogo width={45} height={45} />
+          <a href="mailto:danielcgilibert@gmail.com" target="_blank">
+            <Envelope width={45} height={45} />
+          </a>
+          <a href="https://github.com/danielcgilibert" target="_blank">
+            <GithubLogo width={45} height={45} />
+          </a>
+          <a href="/cv/Daniel Carmona Gilibert.pdf" download>
+            <Article width={45} height={45} />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/danielcarmonagilibert/"
+            target="_blank"
+          >
+            <LinkedinLogo width={45} height={45} />
+          </a>
         </div>
       </div>
     </section>
