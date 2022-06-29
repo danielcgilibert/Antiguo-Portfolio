@@ -12,7 +12,10 @@ const Presentation = () => {
 
   return (
     <section id="about" className={styles.about}>
-      <VerticalTimeline lineColor={theme === 'dark' ? 'white' : 'black'}>
+      <VerticalTimeline
+        animate={false}
+        lineColor={theme === 'dark' ? 'white' : 'black'}
+      >
         {work.map(
           ({ job, company, city, date, tasks, icon, background = 'black' }) => (
             <VerticalTimelineElement
@@ -29,14 +32,21 @@ const Presentation = () => {
               icon={<img src={icon} className="rounded-full" />}
               lineColor={'black'}
             >
-              <h1 className={styles.title}>🖥️{job}</h1>
-              <h2 className={styles.subTitle}>⚙️{company}</h2>
-              <h3 className={styles.subTitle}>🏢{city}</h3>
-              <ul>
-                {tasks.map((task) => (
-                  <li dangerouslySetInnerHTML={{ __html: task }}></li>
-                ))}
-              </ul>
+              <div
+                className="my-5"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                {' '}
+                <h1 className={styles.title}>🖥️{job}</h1>
+                <h2 className={styles.subTitle}>⚙️{company}</h2>
+                <h3 className={styles.subTitle}>🏢{city}</h3>
+                <ul>
+                  {tasks.map((task) => (
+                    <li dangerouslySetInnerHTML={{ __html: task }}></li>
+                  ))}
+                </ul>
+              </div>
             </VerticalTimelineElement>
           )
         )}

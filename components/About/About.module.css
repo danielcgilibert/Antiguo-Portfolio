@@ -1,11 +1,13 @@
 .about {
-  @apply min-h-screen;
+  @apply min-h-screen w-full;
 }
 
 .about ul {
   @apply text-base list-disc p-4;
 }
-
+.about > div {
+  @apply w-11/12 mx-auto;
+}
 .about li {
   @apply my-2;
 }
@@ -18,12 +20,18 @@
 }
 
 .title {
-  @apply font-extrabold text-2xl text-amber-100;
+  @apply font-extrabold text-lg text-lime-200;
 }
 .subTitle {
-  @apply font-bold text-xl text-white !important;
+  @apply font-bold text-base text-white !important;
 }
 
 :global(.dark) .about {
   @apply bg-dark2 text-white;
+}
+
+@media screen(lg) {
+  .about {
+    @apply min-h-screen w-full;
+  }
 }
