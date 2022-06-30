@@ -29,6 +29,7 @@ const Presentation = () => {
                 }`,
               }}
               date={date}
+              dateClassName={styles.date}
               icon={<img src={icon} className="rounded-full" />}
               lineColor={'black'}
             >
@@ -37,7 +38,6 @@ const Presentation = () => {
                 data-aos="fade-up"
                 data-aos-anchor-placement="bottom-bottom"
               >
-                {' '}
                 <h1 className={styles.title}>🖥️{job}</h1>
                 <h2 className={styles.subTitle}>⚙️{company}</h2>
                 <h3 className={styles.subTitle}>🏢{city}</h3>

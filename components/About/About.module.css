@@ -12,6 +12,13 @@
   @apply my-2;
 }
 
+.date {
+  @apply text-black font-bold;
+}
+:global(.dark) .date {
+  @apply text-white;
+}
+
 .about ul strong {
   @apply text-blue-300;
 }
