@@ -1,9 +1,9 @@
 .card {
-  @apply flex flex-col  w-full max-h-full   bg-white shadow-lg rounded-lg text-center;
+  @apply flex flex-col  w-full max-h-full   bg-white shadow-lg rounded-lg text-center font-medium;
 }
 
 :global(.dark) .card {
-  @apply bg-dark text-white;
+  @apply bg-dark2 text-white;
 }
 
 .card h1 {

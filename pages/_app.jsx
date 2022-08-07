@@ -1,5 +1,6 @@
 import Layout from '@components/common/Layout'
 import Navbar from '@components/common/Navbar'
+import splitbee from '@splitbee/web'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { ThemeProvider } from 'next-themes'
@@ -13,6 +14,12 @@ function MyApp({ Component, pageProps }) {
       once: true,
       offset: 50,
     })
+
+    splitbee.init({
+      apiUrl: '/sb-api',
+      scriptUrl: '/sb.js',
+    })
+    splitbee.enableCookie(true)
   }, [])
   return (
     <ThemeProvider attribute="class">

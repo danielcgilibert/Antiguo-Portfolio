@@ -1,3 +1,4 @@
+import splitbee from '@splitbee/web'
 import Image from 'next/image'
 import { Article, Envelope, GithubLogo, LinkedinLogo } from 'phosphor-react'
 import styles from './Presentation.module.css'
@@ -23,19 +24,36 @@ const Presentation = () => {
           Web Developer
         </h2>
         <div className={styles.infoIcons} data-aos="fade-up">
-          <a href="mailto:danielcgilibert@gmail.com" target="_blank">
+          <a
+            rel="noopener noreferrer"
+            href="mailto:danielcgilibert@gmail.com"
+            target="_blank"
+            onClick={() => splitbee.track('Email')}
+          >
             <Envelope width={45} height={45} />
           </a>
-          <a href="https://github.com/danielcgilibert" target="_blank">
+          <a
+            rel="noopener noreferrer"
+            href="https://github.com/danielcgilibert"
+            target="_blank"
+            onClick={() => splitbee.track('Github')}
+          >
             <GithubLogo width={45} height={45} />
           </a>
-          <a href="/cv/Daniel Carmona Gilibert.pdf" download>
+          <a
+            rel="noopener noreferrer"
+            href="/cv/Daniel Carmona Gilibert.pdf"
+            download
+            onClick={() => splitbee.track('PDF')}
+          >
             <Article width={45} height={45} />
           </a>
 
           <a
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/in/danielcarmonagilibert/"
             target="_blank"
+            onClick={() => splitbee.track('Linkedin')}
           >
             <LinkedinLogo width={45} height={45} />
           </a>
