@@ -14,7 +14,7 @@ export const work = [
       'Uso de <strong>GitHub, Jira y Metodología</strong> Scrum para trabajar en equipo',
     ],
     icon: '/companies/bengalaspain.jpg',
-    background: 'rgb(251, 110, 44)',
+    // background: 'rgb(251, 110, 44)',
   },
   {
     job: 'Desarrollador PHP',
@@ -30,7 +30,7 @@ export const work = [
       'Uso de <strong>Trello y GitHub</strong> para trabajar en equipo',
     ],
     icon: '/companies/acrono.jpg',
-    background: '#118ab2',
+    // background: '#118ab2',
   },
 
   {
@@ -44,6 +44,6 @@ export const work = [
       'Solución de errores con TPV',
     ],
     icon: '/companies/accenture.png',
-    background: '#6D23B6',
+    // background: '#6D23B6',
   },
 ]

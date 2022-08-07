@@ -17,7 +17,15 @@ const Presentation = () => {
         lineColor={theme === 'dark' ? 'white' : 'black'}
       >
         {work.map(
-          ({ job, company, city, date, tasks, icon, background = 'black' }) => (
+          ({
+            job,
+            company,
+            city,
+            date,
+            tasks,
+            icon,
+            background = '#026dab',
+          }) => (
             <VerticalTimelineElement
               contentStyle={{
                 background,
