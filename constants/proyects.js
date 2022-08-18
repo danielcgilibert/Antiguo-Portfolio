@@ -11,7 +11,26 @@ export const proyects = [
       '/icons/redux.svg',
     ],
   },
-
+  {
+    cover: '/proyects/testimonial.jpg',
+    name: 'Testimonials grid section',
+    desc: 'Sección de testimonios de clientes',
+    hrefCode:
+      'https://github.com/danielcgilibert/Frontend-Mentor---Testimonials-grid-section',
+    hrefWeb:
+      'https://danielcgilibert.github.io/Frontend-Mentor---Testimonials-grid-section/',
+    stackIcons: ['/icons/html.svg', '/icons/css.svg', '/icons/vite.svg'],
+  },
+  {
+    cover: '/proyects/productReview.png',
+    name: 'Product Review',
+    desc: 'Card Review',
+    hrefCode:
+      'https://github.com/danielcgilibert/Frontend-Mentor--Product-preview-card-component',
+    hrefWeb:
+      'https://danielcgilibert.github.io/Frontend-Mentor--Product-preview-card-component/',
+    stackIcons: ['/icons/html.svg', '/icons/css.svg', '/icons/vite.svg'],
+  },
   {
     cover: '/proyects/crowdfunding.png',
     name: 'Crowdfunding',
