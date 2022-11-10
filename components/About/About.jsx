@@ -27,6 +27,7 @@ const Presentation = () => {
             background = '#026dab',
           }) => (
             <VerticalTimelineElement
+              key={company}
               contentStyle={{
                 background,
                 color: 'white',
@@ -50,8 +51,11 @@ const Presentation = () => {
                 <h2 className={styles.subTitle}>⚙️{company}</h2>
                 <h3 className={styles.subTitle}>🏢{city}</h3>
                 <ul>
-                  {tasks.map((task) => (
-                    <li dangerouslySetInnerHTML={{ __html: task }}></li>
+                  {tasks.map((task, index) => (
+                    <li
+                      key={index}
+                      dangerouslySetInnerHTML={{ __html: task }}
+                    ></li>
                   ))}
                 </ul>
               </div>

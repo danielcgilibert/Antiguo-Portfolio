@@ -1,5 +1,5 @@
 import { routes } from '@constants/routesNav'
-import { MoonIcon, SunIcon } from '@heroicons/react/solid'
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import { useTheme } from 'next-themes'
 import { useState } from 'react'
 import styles from './Navbar.module.css'
