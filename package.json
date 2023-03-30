@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.6",
+    "@headlessui/react": "^1.7.11",
     "@heroicons/react": "^2.0.13",
     "@splitbee/web": "^0.3.0",
     "aos": "^3.0.0-beta.6",
@@ -22,15 +22,15 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
-    "eslint": "^8.29.0",
-    "eslint-config-next": "13.1.1",
+    "eslint": "^8.37.0",
+    "eslint-config-next": "13.1.6",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.31.11",
     "postcss": "^8.4.21",
-    "prettier": "2.8.1",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "2.8.7",
     "tailwindcss": "^3.2.4"
   }
 }
